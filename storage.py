@@ -20,22 +20,3 @@ def save_game(game):
     
     with open("game_history.json", "w") as file:
         json.dump(history, file, indent=4)
-
-
-    
-    
-
-"""def save_game(game):
-    history = load_game_history()
-
-    history.append(game)
-
-    try:
-        with open("game_history.json", "w") as file:
-            json.dump(history, file, indent=4)
-
-        return True
-
-    except OSError:
-        print("Error: Could not save game.")
-        return False"""
